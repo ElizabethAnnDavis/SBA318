@@ -9,28 +9,8 @@ router
         console.log("USERS: ");
         console.log(users);
         res.json(users);
-    });
-    /*.post((req, res) => {
-
     })
-    .patch((req, res) => {
-
-    })
-    .delete((req, res) => {
-
-    });*/
-
-router
-    .route('/:id')
-    .get((req, res, next) => {
-        const user = users.find((u) => u.id == req.params.id);
-        if(user){
-            console.log(`USER ${req.params.id}:`);
-            console.log(user);
-            res.json(user);
-        }else next();
-    })
-    .patch((req, res, next) => {
+    .post((req, res, next) => {
         if(req.body.name && req.body.username && req.body.email){
             if(users.find((u) => u.username == req.body.username)){
                 console.log(`ERROR: Username ${req.body.username} already in use`);
@@ -49,7 +29,40 @@ router
         }else{
             console.log(`ERROR: Insufficient Data`);
             res.json({error: `Insufficient Data`});
+            next();
         };
+    });
+    /*.patch((req, res) => {
+
+    })
+    .delete((req, res) => {
+
+    });*/
+
+router
+    .route('/:id')
+    .get((req, res, next) => {
+        const user = users.find((u) => u.id == req.params.id);
+        if(user){
+            console.log(`USER ${req.params.id}:`);
+            console.log(user);
+            res.json(user);
+        }else next();
+    })
+    .patch((req, res, next) => {
+        const user = users.find((u, i) => {
+            if(u.id == id){
+                for(const key in req.body){
+                    user[i][key] = req.body[key];
+                };
+                return true;
+            };
+        });
+        if(user){
+            console.log(`USER:`);
+            console.log(user);
+            res.json(user);
+        }else next();
     })
     .delete((req, res, next) => {
         const user = users.find((u, i) => {
