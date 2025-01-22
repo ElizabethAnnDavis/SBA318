@@ -18,14 +18,15 @@ router
                 return;
             };
             const user = {
-                id: user[users.length - 1].id + 1,
+                id: users[users.length - 1].id + 1,
                 name: req.body.name,
                 username: req.body.username,
                 email: req.body.email
             };
             users.push(user);
+            res.status(201).json(user);
             console.log(user);
-            res.json(user);
+            //res.json(user);
         }else{
             console.log(`ERROR: Insufficient Data`);
             res.json({error: `Insufficient Data`});
@@ -44,15 +45,20 @@ router
         }else next();
     })
     .patch((req, res, next) => {
-        const user = users.find((u, i) => {
-            if(u.id == id){
+        const user = users.find(u => u.id == req.params.id);
+        /*const user = users.find((u) => {
+            if(u.id == req.params.id){
                 for(const key in req.body){
-                    user[i][key] = req.body[key];
+                    user[key] = req.body[key];
                 };
                 return true;
             };
-        });
+        });*/
         if(user){
+            for(const key in req.body){
+                user[key] = req.body[key];
+            };
+
             console.log(`USER:`);
             console.log(user);
             res.json(user);
