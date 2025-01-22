@@ -32,12 +32,6 @@ router
             next();
         };
     });
-    /*.patch((req, res) => {
-
-    })
-    .delete((req, res) => {
-
-    });*/
 
 router
     .route('/:id')
