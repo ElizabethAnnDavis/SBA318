@@ -9,8 +9,8 @@ router
         console.log("COMMENTS: ");
         console.log(comments);
         res.json(comments);
-    })
-    .post((req, res) => {
+    });
+    /*.post((req, res) => {
 
     })
     .patch((req, res) => {
@@ -18,6 +18,6 @@ router
     })
     .delete((req, res) => {
 
-    });
+    });*/
 
 module.exports = router;
