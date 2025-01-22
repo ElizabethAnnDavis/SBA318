@@ -19,6 +19,9 @@ router
                 content: req.body.content,
             };
             posts.push(post);
+            console.log("POST: ");
+            console.log(post);
+            res.json(posts[posts.length - 1]);
         }else{
             console.log(`ERROR: Insufficient Data`);
             res.json({error: `Insufficient Data`});
