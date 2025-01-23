@@ -18,7 +18,7 @@ Requirements:
     
   ✔  5%  --> Use at least three different data categories (e.g., users, posts, or comments)
     
-  -  5%  --> Utilize reasonable data structuring practices.
+  ✔  5%  --> Utilize reasonable data structuring practices.
     
   ✔  5%  --> Create GET routes for all data that should be exposed to the client.
     
@@ -33,7 +33,7 @@ Requirements:
     
   ✔  5%  --> Utilize route parameters, where appropriate.
     
-  - 10%  --> Adhere to the guiding principles of REST.
+  ✔ 10%  --> Adhere to the guiding principles of REST.
     
   -  5%  --> Utilize reasonable code organization practices.
     
