@@ -46,14 +46,6 @@ router
     })
     .patch((req, res, next) => {
         const user = users.find(u => u.id == req.params.id);
-        /*const user = users.find((u) => {
-            if(u.id == req.params.id){
-                for(const key in req.body){
-                    user[key] = req.body[key];
-                };
-                return true;
-            };
-        });*/
         if(user){
             for(const key in req.body){
                 user[key] = req.body[key];

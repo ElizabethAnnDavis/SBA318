@@ -16,26 +16,22 @@ Requirements:
     
   -  5%  --> Create and use error-handling middleware.
     
-  -  5%  --> Use at least three different data categories (e.g., users, posts, or comments)
+  ✔  5%  --> Use at least three different data categories (e.g., users, posts, or comments)
     
   -  5%  --> Utilize reasonable data structuring practices.
     
-  -  5%  --> Create GET routes for all data that should be exposed to the client.
+  ✔  5%  --> Create GET routes for all data that should be exposed to the client.
     
-  -  5%  --> Create POST routes for data, as appropriate. 
+  ✔  5%  --> Create POST routes for data, as appropriate. 
              At least one data category should allow for client creation via a POST request.
     
-  -  5%  --> Create PATCH or PUT routes for data, as appropriate. 
+  ✔  5%  --> Create PATCH or PUT routes for data, as appropriate. 
              At least one data category should allow for client manipulation via a PATCH or PUT request.
     
-  -  5%  --> Create DELETE routes for data, as appropriate. 
+  ✔  5%  --> Create DELETE routes for data, as appropriate. 
              At least one data category should allow for client deletion via a DELETE request.
     
-  -  5%  --> Include query parameters for data filtering, where appropriate. 
-             At least one data category should allow for additional filtering through the use of query parameters.
-             Note: DO NOT use API keys; this makes it more difficult for instructors to grade finished projects efficiently.
-    
-  -  5%  --> Utilize route parameters, where appropriate.
+  ✔  5%  --> Utilize route parameters, where appropriate.
     
   - 10%  --> Adhere to the guiding principles of REST.
     

@@ -10,16 +10,22 @@ const comments = require('./routes/comments');
 
 //const error = require("./utilities/error");
 
-// Parsing Middleware
+// Parsing MiddleWARE
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ extended: true }));
+
+//  Logging Request MiddleWARE
+app.use((req, res, next) => {
+    console.log(`${new Date().toISOString()} - ${req.method} ${req.url}`);
+    next();
+});
 
 // Use our Routes
 app.use("/api/users", users);
 app.use("/api/posts", posts);
 app.use("/api/comments", comments);
 
-// 404 middleware.
+// 404 MiddleWARE.
 app.use((req, res) => {
     res.status(404);
     res.json({ error: "Resource Not Found" });
