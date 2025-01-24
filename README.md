@@ -12,9 +12,9 @@ Instructions:
   -  Create a small Node and Express server application.
 
 Requirements:
-  -  5%  --> Create and use at least two pieces of custom middleware.
+  ✔  5%  --> Create and use at least two pieces of custom middleware.
     
-  -  5%  --> Create and use error-handling middleware.
+  ✔  5%  --> Create and use error-handling middleware.
     
   ✔  5%  --> Use at least three different data categories (e.g., users, posts, or comments)
     
@@ -35,13 +35,13 @@ Requirements:
     
   ✔ 10%  --> Adhere to the guiding principles of REST.
     
-  -  5%  --> Utilize reasonable code organization practices.
+  ✔  5%  --> Utilize reasonable code organization practices.
     
-  - 10%  --> Ensure that the program runs without errors 
+  ✔ 10%  --> Ensure that the program runs without errors 
              (comment out things that do not work, and explain your blockers - you can still receive partial credit).
     
-  -  5%  --> Commit frequently to the git repository.
+  ✔  5%  --> Commit frequently to the git repository.
     
-  -  2%  --> Include a README file that contains a description of your application.
+  ✔  2%  --> Include a README file that contains a description of your application.
     
-  -  5%  --> Level of effort displayed in creativity, presentation, and user experience.
+  ✔  5%  --> Level of effort displayed in creativity, presentation, and user experience.
