@@ -10,14 +10,5 @@ router
         console.log(comments);
         res.json(comments);
     });
-    /*.post((req, res) => {
-
-    })
-    .patch((req, res) => {
-
-    })
-    .delete((req, res) => {
-
-    });*/
 
 module.exports = router;

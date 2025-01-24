@@ -25,15 +25,8 @@ router
         }else{
             console.log(`ERROR: Insufficient Data`);
             res.json({error: `Insufficient Data`});
-            next();
+            next(err);
         };
     });
-    /*
-    .patch((req, res) => {
-
-    })
-    .delete((req, res) => {
-
-    });*/
 
 module.exports = router;

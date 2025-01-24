@@ -26,9 +26,9 @@ app.use("/api/posts", posts);
 app.use("/api/comments", comments);
 
 // 404 MiddleWARE.
-app.use((req, res) => {
-    res.status(404);
-    res.json({ error: "Resource Not Found" });
+app.use((err, req, res, next) => {
+    console.log("Something went wrong");
+    res.send("Something went wrong");
 });
 
 app.listen(PORT, () => {

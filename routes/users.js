@@ -26,11 +26,10 @@ router
             users.push(user);
             res.status(201).json(user);
             console.log(user);
-            //res.json(user);
         }else{
             console.log(`ERROR: Insufficient Data`);
             res.json({error: `Insufficient Data`});
-            next();
+            next(err);
         };
     });
 
@@ -42,7 +41,10 @@ router
             console.log(`USER ${req.params.id}:`);
             console.log(user);
             res.json(user);
-        }else next();
+        }else{
+            console.log("/:id else clause");
+            next(err);
+        } 
     })
     .patch((req, res, next) => {
         const user = users.find(u => u.id == req.params.id);
@@ -54,7 +56,7 @@ router
             console.log(`USER:`);
             console.log(user);
             res.json(user);
-        }else next();
+        }else next(err);
     })
     .delete((req, res, next) => {
         const user = users.find((u, i) => {
@@ -68,7 +70,7 @@ router
             console.log(user);
             console.log("DELETED");
             res.json(user);
-        }else next();
+        }else next(err);
     });
 
 module.exports = router;
