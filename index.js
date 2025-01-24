@@ -8,8 +8,6 @@ const users = require('./routes/users');
 const posts = require('./routes/posts');
 const comments = require('./routes/comments');
 
-const error = require("./utilities/error");
-
 // Parsing MiddleWARE
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json({ extended: true }));
