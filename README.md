@@ -43,9 +43,10 @@
 - }
 
 #### COMMENTS
-##### GET all posts:
+##### GET all comments:
 [All comments (localhost:3000/api/comments)]
 
+##### POST new comment:
 [NEW comment (localhost:3000/api/comments)]
 ###### INCLUDE:
 - {
