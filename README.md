@@ -3,7 +3,7 @@
 ### Documentation:
 #### USERS
 ##### GET all users:
-[All users](localhost:3000/api/users)
+[All users (localhost:3000/api/users)]
 
 ##### POST new user:
 [NEW user](localhost:3000/api/users)
@@ -36,6 +36,11 @@
 ##### POST new post:
 [NEW post](localhost:3000/api/posts)
 ###### INCLUDE:
+- {
+-    "userId": "Users ID",
+-    "title": "Post Title",
+-    "content": "Post Content"
+- }
 - {
 -     "userId": "Users ID",
 -     "title": "Post Title",
