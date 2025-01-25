@@ -6,7 +6,7 @@
 [All users (localhost:3000/api/users)]
 
 ##### POST new user:
-[NEW user](localhost:3000/api/users)
+[NEW user (localhost:3000/api/users)]
 ###### INCLUDE:
 - {
 -    "name": "Users Name",
@@ -15,10 +15,10 @@
 - }
 
 ##### GET specific user:
-[SPECIFIC user](localhost:3000/api/users/:id)
+[SPECIFIC user (localhost:3000/api/users/:id)]
 
 ##### PATCH specific user:
-[SPECIFIC user](localhost:3000/api/users/:id)
+[SPECIFIC user (localhost:3000/api/users/:id)]
 ###### INCLUDE(any desired):
 - {
 -    "name": "Users Name",
@@ -27,36 +27,31 @@
 - }
 
 ##### DELETE specific user:
-[SPECIFIC user](localhost:3000/api/users/:id)
+[SPECIFIC user (localhost:3000/api/users/:id)]
 
 #### POSTS
 ##### GET all posts:
-[All posts](localhost:3000/api/posts)
+[All posts (localhost:3000/api/posts)]
 
 ##### POST new post:
-[NEW post](localhost:3000/api/posts)
+[NEW post (localhost:3000/api/posts)]
 ###### INCLUDE:
 - {
 -    "userId": "Users ID",
 -    "title": "Post Title",
 -    "content": "Post Content"
 - }
-- {
--     "userId": "Users ID",
--     "title": "Post Title",
--     "content": "Post Content"
-- }
 
 #### COMMENTS
 ##### GET all posts:
-[All comments](localhost:3000/api/comments)
+[All comments (localhost:3000/api/comments)]
 
-[NEW comment](localhost:3000/api/comments)
+[NEW comment (localhost:3000/api/comments)]
 ###### INCLUDE:
 - {
--     "postId": "Post ID",
--     "userId": "User ID",
--     "content": "Comment Content"
+-    "postId": "Post ID",
+-    "userId": "User ID",
+-    "content": "Comment Content"
 - }
 
 
